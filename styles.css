@@ -1,6 +1,188 @@
-@import url('fonts.googleapis.com');
+/* 2025 Reset (Always start here) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box; /* Ensures padding/borders don't affect width */
+}
 
 body {
-    background-color: white;
     font-family: 'Roboto', sans-serif;
+    color: #E5E7EB; /* Light text for dark sections */
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- SECTION 1: Header and Hero --- */
+.section-one {
+    background-color: #1F2937;
+    padding: 16px 0 80px 0; /* Top/bottom padding */
+}
+
+.header-content {
+    display: flex; /* Aligns logo and nav side-by-side */
+    justify-content: space-between; /* Pushes them to opposite ends */
+    align-items: center; /* Centers them vertically */
+    padding: 0 16px; /* Add slight horizontal padding */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+nav ul {
+    display: flex; /* Aligns list items (links) side-by-side */
+    gap: 16px;
+}
+
+.hero-content {
+    display: flex; /* Aligns left text/button and right image placeholder */
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 16px 0 16px;
+    gap: 32px;
+}
+
+.hero-left, .hero-right {
+    flex: 1; /* Makes both sides grow equally to take up 50% width */
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 8px;
+    max-width: 350px;
+    line-height: 1;
+}
+
+.hero-left p {
+    color: #E5E7EB;
+    margin-bottom: 16px;
+    max-width: 420px;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 18px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.placeholder {
+    background-color: gray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* --- SECTION 2: Information Cards --- */
+.section-two {
+    text-align: center;
+    padding: 40px 16px 80px 16px;
+    color: #1F2937;
+    background-color: white;
+}
+
+.section-two h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex; /* Aligns the 4 cards side-by-side */
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Stacks image placeholder and text vertically */
+    align-items: center;
+    max-width: 200px;
+}
+
+.card-box {
+    width: 100%;
+    height: 150px;
+    border: 4px solid #3B82F6;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* --- SECTION 3: Quote --- */
+.section-three {
+    background-color: #E5E7EB;
+    padding: 80px 16px;
+    color: #1F2937;
+}
+
+.quote-container {
+    max-width: 800px; /* Limits the width of the quote for readability */
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 16px;
+}
+
+.quote-author {
+    font-weight: 700;
+    text-align: right;
+}
+
+/* --- SECTION 4: Call to Action --- */
+.section-four {
+    background-color: white;
+    padding: 80px 16px;
+}
+
+.cta-box {
+    background-color: #3B82F6;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex; /* Aligns text block and button side-by-side */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-text h3 {
+    color: white;
+}
+
+.cta-button {
+    border: 2px solid white; /* Adds white border around button */
+    flex-shrink: 0; /* Prevents button from shrinking on small screens */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
 }
